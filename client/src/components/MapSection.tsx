@@ -124,119 +124,63 @@ export const MapSection = () => {
             viewport={{ once: true, amount: 0.2 }}
           >
             <div className="border-4 border-neutral-light rounded-xl overflow-hidden shadow-lg">
-              {/* Interactive Map */}
+              {/* Interactive Map - Simple Version */}
               <div className="bg-neutral-light h-96 relative flex items-center justify-center">
-                <img
-                  src="https://images.unsplash.com/photo-1628062699790-841ac4a98b07?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                  alt="Map of Ladakh"
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.currentTarget.src = "https://maps.googleapis.com/maps/api/staticmap?center=Ladakh,India&zoom=7&size=800x400&markers=color:red%7Clabel:L%7CLadakh,India&key=YOUR_API_KEY";
-                    e.currentTarget.onerror = null;
-                  }}
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
-                  <div className="bg-white bg-opacity-90 rounded-lg shadow-lg p-4 text-center">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-12 w-12 text-primary mb-4 mx-auto"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7"
-                      />
-                    </svg>
-                    <h4 className="font-heading font-bold text-xl">
+                <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
+                  <div className="bg-white rounded-lg shadow-lg p-6 text-center w-4/5 relative">
+                    {/* Ladakh Logo */}
+                    <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
+                      <svg className="h-16 w-16 text-indigo-900" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L2 12h5v10h10V12h5L12 2z" />
+                      </svg>
+                    </div>
+                    
+                    <h3 className="font-heading font-bold text-2xl mb-4">
                       Explore Ladakh Map
-                    </h4>
-                    <p className="text-sm text-neutral-dark mt-2">
+                    </h3>
+                    <p className="text-sm text-neutral-dark mb-6">
                       Click on markers to discover destinations
                     </p>
+                    
+                    {/* Leh Marker */}
+                    <div className="absolute top-6 right-12 text-orange-500 flex flex-col items-center">
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        className="h-6 w-6" 
+                        viewBox="0 0 24 24" 
+                        fill="currentColor"
+                      >
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                      </svg>
+                      <span className="text-orange-500 font-medium mt-1">Leh</span>
+                    </div>
+                    
+                    {/* Pangong Marker */}
+                    <div className="absolute top-6 right-32 text-orange-500 flex flex-col items-center">
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        className="h-6 w-6" 
+                        viewBox="0 0 24 24" 
+                        fill="currentColor"
+                      >
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                      </svg>
+                      <span className="text-orange-500 font-medium mt-1">Pangong</span>
+                    </div>
+                    
+                    {/* Nubra Marker */}
+                    <div className="absolute bottom-6 left-32 text-orange-500 flex flex-col items-center">
+                      <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        className="h-6 w-6" 
+                        viewBox="0 0 24 24" 
+                        fill="currentColor"
+                      >
+                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+                      </svg>
+                      <span className="text-orange-500 font-medium mt-1">Nubra</span>
+                    </div>
                   </div>
-                </div>
-
-                {/* Map Markers (Simplified representation) */}
-                <div className="absolute top-1/4 left-1/2 transform -translate-x-1/2 text-orange-500">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-                  <span className="text-xs font-bold bg-white px-2 py-1 rounded shadow-sm">
-                    Leh
-                  </span>
-                </div>
-
-                <div className="absolute top-1/3 right-1/4 text-orange-500">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-                  <span className="text-xs font-bold bg-white px-2 py-1 rounded shadow-sm">
-                    Pangong
-                  </span>
-                </div>
-
-                <div className="absolute bottom-1/3 left-1/3 text-orange-500">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                    />
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                    />
-                  </svg>
-                  <span className="text-xs font-bold bg-white px-2 py-1 rounded shadow-sm">
-                    Nubra
-                  </span>
                 </div>
               </div>
             </div>
