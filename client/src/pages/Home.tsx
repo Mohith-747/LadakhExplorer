@@ -13,7 +13,7 @@ import { Footer } from "@/components/Footer";
 
 const Home = () => {
   return (
-    <div className="font-sans text-neutral-darkest bg-neutral-lightest">
+    <div className="font-sans text-foreground">
       <Navbar />
       <HeroSection />
       <Introduction />

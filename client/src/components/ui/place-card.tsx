@@ -11,6 +11,12 @@ interface PlaceProps {
 }
 
 export function PlaceCard({ place }: PlaceProps) {
+  // Fallback image if the original image fails to load
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    e.currentTarget.src = "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80";
+    e.currentTarget.alt = "Ladakh landscape";
+  };
+
   return (
     <motion.div
       className="bg-white rounded-xl shadow-md overflow-hidden"
@@ -22,6 +28,7 @@ export function PlaceCard({ place }: PlaceProps) {
           src={place.image}
           alt={place.name}
           className="w-full h-60 object-cover"
+          onError={handleImageError}
         />
         {place.isMustVisit && (
           <div className="absolute top-4 right-4 bg-orange-500 text-white text-sm font-bold px-3 py-1 rounded-full">

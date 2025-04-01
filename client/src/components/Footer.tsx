@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <footer className="bg-neutral-darkest text-white py-12">
+    <footer className="bg-primary text-white py-12 mt-auto">
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
@@ -236,7 +236,7 @@ export const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-neutral-dark mt-8 pt-8 text-center text-neutral-light">
+        <div className="border-t border-neutral-light/20 mt-8 pt-8 text-center text-neutral-light">
           <p>&copy; {new Date().getFullYear()} DiscoverLadakh. All rights reserved.</p>
         </div>
       </div>

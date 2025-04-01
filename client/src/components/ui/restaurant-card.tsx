@@ -11,6 +11,12 @@ interface RestaurantProps {
 }
 
 export function RestaurantCard({ restaurant }: RestaurantProps) {
+  // Fallback image if the original image fails to load
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    e.currentTarget.src = "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80";
+    e.currentTarget.alt = "Ladakh restaurant";
+  };
+
   // Generate stars based on rating
   const renderStars = (rating: number) => {
     const stars = [];
@@ -76,6 +82,7 @@ export function RestaurantCard({ restaurant }: RestaurantProps) {
           src={restaurant.image}
           alt={restaurant.name}
           className="w-full h-full object-cover"
+          onError={handleImageError}
         />
       </div>
       <div className="w-2/3 p-4">

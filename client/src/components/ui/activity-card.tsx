@@ -11,6 +11,12 @@ interface ActivityProps {
 }
 
 export function ActivityCard({ activity }: ActivityProps) {
+  // Fallback image if the original image fails to load
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    e.currentTarget.src = "https://images.unsplash.com/photo-1527004013197-933c4bb611b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80";
+    e.currentTarget.alt = "Ladakh activity";
+  };
+
   return (
     <motion.div
       className="bg-white rounded-xl shadow-md overflow-hidden"
@@ -22,6 +28,7 @@ export function ActivityCard({ activity }: ActivityProps) {
           src={activity.image}
           alt={activity.name}
           className="w-full h-60 object-cover"
+          onError={handleImageError}
         />
         <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-black opacity-60"></div>
         <div className="absolute bottom-4 left-4">
