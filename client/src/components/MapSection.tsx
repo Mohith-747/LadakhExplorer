@@ -126,61 +126,12 @@ export const MapSection = () => {
             <div className="border-4 border-neutral-light rounded-xl overflow-hidden shadow-lg">
               {/* Interactive Map - Simple Version */}
               <div className="bg-neutral-light h-96 relative flex items-center justify-center">
-                <div className="absolute inset-0 bg-gray-200 flex items-center justify-center">
-                  <div className="bg-white rounded-lg shadow-lg p-6 text-center w-4/5 relative">
-                    {/* Ladakh Logo */}
-                    <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10">
-                      <svg className="h-16 w-16 text-indigo-900" viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M12 2L2 12h5v10h10V12h5L12 2z" />
-                      </svg>
-                    </div>
-                    
-                    <h3 className="font-heading font-bold text-2xl mb-4">
-                      Explore Ladakh Map
-                    </h3>
-                    <p className="text-sm text-neutral-dark mb-6">
-                      Click on markers to discover destinations
-                    </p>
-                    
-                    {/* Leh Marker */}
-                    <div className="absolute top-6 right-12 text-orange-500 flex flex-col items-center">
-                      <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        className="h-6 w-6" 
-                        viewBox="0 0 24 24" 
-                        fill="currentColor"
-                      >
-                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                      </svg>
-                      <span className="text-orange-500 font-medium mt-1">Leh</span>
-                    </div>
-                    
-                    {/* Pangong Marker */}
-                    <div className="absolute top-6 right-32 text-orange-500 flex flex-col items-center">
-                      <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        className="h-6 w-6" 
-                        viewBox="0 0 24 24" 
-                        fill="currentColor"
-                      >
-                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                      </svg>
-                      <span className="text-orange-500 font-medium mt-1">Pangong</span>
-                    </div>
-                    
-                    {/* Nubra Marker */}
-                    <div className="absolute bottom-6 left-32 text-orange-500 flex flex-col items-center">
-                      <svg 
-                        xmlns="http://www.w3.org/2000/svg" 
-                        className="h-6 w-6" 
-                        viewBox="0 0 24 24" 
-                        fill="currentColor"
-                      >
-                        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
-                      </svg>
-                      <span className="text-orange-500 font-medium mt-1">Nubra</span>
-                    </div>
-                  </div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <img 
+                    src="/images/map.png" 
+                    alt="Ladakh Map" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </div>

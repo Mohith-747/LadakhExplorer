@@ -4,8 +4,7 @@ export const placesToVisit = [
     name: "Pangong Lake",
     description:
       "An enchanting high-altitude lake known for its ever-changing blue hues and stunning mountain backdrop.",
-    image:
-      "https://images.unsplash.com/photo-1598089842345-111fd96de59e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/pangong.jpg",
     distance: "Leh, 140 km",
     isMustVisit: true,
   },
@@ -13,40 +12,35 @@ export const placesToVisit = [
     name: "Leh Palace",
     description:
       "A historic royal palace and museum offering panoramic views of Leh town and surrounding mountains.",
-    image:
-      "https://images.unsplash.com/photo-1559385027-8cdba29f2784?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/lehpalace.jpg",
     distance: "Leh City Center",
   },
   {
     name: "Thiksey Monastery",
     description:
       "A magnificent 12-story monastery complex resembling the Potala Palace in Lhasa, with stunning Buddha statues and ancient artifacts.",
-    image:
-      "https://images.unsplash.com/photo-1582650692468-cde5a59394c3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/monastery.jpg",
     distance: "19 km from Leh",
   },
   {
     name: "Nubra Valley",
     description:
       "A verdant valley with unique sand dunes, double-humped Bactrian camels, and charming villages set against towering mountains.",
-    image:
-      "https://images.unsplash.com/photo-1614607206234-f7446488c310?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/nubra.jpg",
     distance: "150 km from Leh",
   },
   {
     name: "Magnetic Hill",
     description:
       "A gravity-defying phenomenon where vehicles appear to roll uphill when placed in neutral, creating an optical illusion.",
-    image:
-      "https://images.unsplash.com/photo-1614607242094-765d181a4d4f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/place1.jpg",
     distance: "30 km from Leh",
   },
   {
     name: "Khardung La Pass",
     description:
       "One of the world's highest motorable passes at 17,982 feet, offering breathtaking views and a gateway to Nubra Valley.",
-    image:
-      "https://images.unsplash.com/photo-1516326659508-7bcd797448bb?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/khardung.jpg",
     distance: "40 km from Leh",
   },
 ];
@@ -57,24 +51,21 @@ export const cuisines = [
     name: "Thukpa",
     description:
       "A hearty noodle soup with vegetables and meat, perfect for cold Ladakhi evenings.",
-    image:
-      "https://images.unsplash.com/photo-1603064434628-8c303aa63f99?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/food1.jpg",
     tags: ["Local Favorite", "Vegetarian Options"],
   },
   {
     name: "Momos",
     description:
       "Steamed dumplings filled with vegetables or meat, served with spicy chutney.",
-    image:
-      "https://images.unsplash.com/photo-1626921706635-95eb66c89a07?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/food3.jpg",
     tags: ["Must Try", "Street Food"],
   },
   {
     name: "Butter Tea (Po Cha)",
     description:
       "A traditional Ladakhi tea made with yak butter, salt, and tea leaves – a true local experience.",
-    image:
-      "https://images.unsplash.com/photo-1582360663422-a007635feffa?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/food2.jpg",
     tags: ["Traditional", "Beverage"],
   },
 ];
@@ -85,16 +76,14 @@ export const restaurants = [
     name: "Tibetan Kitchen",
     description:
       "Authentic Tibetan and Ladakhi cuisine in the heart of Leh town.",
-    image:
-      "https://images.unsplash.com/photo-1611309454921-10a1643c911c?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+    image: "/images/cuisine1.jpg",
     rating: 4.5,
     location: "Main Market, Leh",
   },
   {
     name: "Lamayuru Restaurant",
     description: "Local cuisine with panoramic mountain views.",
-    image:
-      "https://images.unsplash.com/photo-1533630453742-fff1bc4d0e69?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+    image: "/images/cuisine2.jpg",
     rating: 4.0,
     location: "Fort Road, Leh",
   },
@@ -102,8 +91,7 @@ export const restaurants = [
     name: "Gesmo Restaurant",
     description:
       "Popular among travelers for its diverse menu and cozy ambiance.",
-    image:
-      "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+    image: "/images/cuisine3.jpg",
     rating: 4.8,
     location: "Changspa Road, Leh",
   },
@@ -111,8 +99,7 @@ export const restaurants = [
     name: "Bon Appetit",
     description:
       "A blend of local and international cuisine with garden seating.",
-    image:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80",
+    image: "/images/cuisine4.jpg",
     rating: 4.2,
     location: "Upper Tukcha Road, Leh",
   },
@@ -124,8 +111,7 @@ export const accommodations = [
     title: "Luxury Hotels & Resorts",
     description:
       "Experience Ladakh in style with premium accommodations offering panoramic mountain views, spa services, and authentic Ladakhi cuisine. These properties blend modern comforts with traditional architecture.",
-    image:
-      "https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/hotel1.jpg",
     badge: "Premium",
     badgeColor: "bg-primary",
     amenities: [
@@ -153,8 +139,7 @@ export const accommodations = [
     title: "Boutique Guesthouses",
     description:
       "Charming guesthouses offering comfortable accommodations with local character. These properties provide a perfect balance of comfort and authenticity with personalized service.",
-    image:
-      "https://images.unsplash.com/photo-1594394489329-490aa49f6256?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/accommodation1.jpg",
     badge: "Mid-Range",
     badgeColor: "bg-secondary",
     amenities: [
@@ -182,8 +167,7 @@ export const accommodations = [
     title: "Authentic Homestays",
     description:
       "Experience genuine Ladakhi hospitality by staying with local families. These homestays offer simple accommodations and the opportunity to experience daily life and traditional cuisine in Ladakh.",
-    image:
-      "https://images.unsplash.com/photo-1482623167695-35ef7c9884e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/hotel3.jpg",
     badge: "Budget-Friendly",
     badgeColor: "bg-orange-500",
     amenities: [
@@ -219,8 +203,7 @@ export const activities = [
     name: "Trekking Expeditions",
     description:
       "Explore stunning mountain trails from easy day hikes to challenging multi-day treks through remote valleys and high passes.",
-    image:
-      "https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/trekking.jpg",
     season: "Jun-Sep",
     category: "Adventure",
   },
@@ -228,8 +211,7 @@ export const activities = [
     name: "Mountain Biking",
     description:
       "Experience the thrill of cycling through high-altitude passes and picturesque valleys on well-maintained mountain bikes.",
-    image:
-      "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/biking.jpg",
     season: "May-Oct",
     category: "Adventure",
   },
@@ -237,8 +219,7 @@ export const activities = [
     name: "Monastery Tours",
     description:
       "Visit ancient Buddhist monasteries to witness meditation sessions, religious ceremonies, and marvel at centuries-old art and architecture.",
-    image:
-      "https://images.unsplash.com/photo-1568425502579-250724b7ce18?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/monastery.jpg",
     season: "Year-round",
     category: "Cultural",
   },
@@ -246,8 +227,7 @@ export const activities = [
     name: "River Rafting",
     description:
       "Navigate the thrilling rapids of the Zanskar and Indus rivers with experienced guides for an adrenaline-pumping adventure.",
-    image:
-      "https://images.unsplash.com/photo-1584289537662-27851fd5ab8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/rafting.jpg",
     season: "Jun-Aug",
     category: "Adventure",
   },
@@ -255,8 +235,7 @@ export const activities = [
     name: "Bactrian Camel Safari",
     description:
       "Ride double-humped Bactrian camels across the sand dunes of Nubra Valley for a unique desert experience in the Himalayas.",
-    image:
-      "https://images.unsplash.com/photo-1573167443175-ce20fdc27a57?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/camel.jpg",
     season: "May-Sep",
     category: "Cultural",
   },
@@ -264,8 +243,7 @@ export const activities = [
     name: "Photography Tours",
     description:
       "Capture the stunning landscapes, vibrant festivals, and unique culture of Ladakh with guided photography expeditions.",
-    image:
-      "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    image: "/images/photography.jpg",
     season: "Year-round",
     category: "Cultural",
   },
@@ -274,35 +252,35 @@ export const activities = [
 // Gallery Images Data
 export const galleryImages = [
   {
-    src: "https://images.unsplash.com/photo-1595815771614-ade703681560?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    src: "/images/pangong.jpg",
     alt: "Pangong Lake",
   },
   {
-    src: "https://images.unsplash.com/photo-1634414108408-3a389b24bf9f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    src: "/images/monastery.jpg",
     alt: "Ladakh monastery",
   },
   {
-    src: "https://images.unsplash.com/photo-1576487236230-eaa4aca7b6f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    src: "/images/nubra.jpg",
     alt: "Nubra Valley",
   },
   {
-    src: "https://images.unsplash.com/photo-1622793348115-8a3696298da2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    src: "/images/cuisine1.jpg",
     alt: "Ladakhi culture",
   },
   {
-    src: "https://images.unsplash.com/photo-1613457246651-ea1b8a9751bc?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    src: "/images/khardung.jpg",
     alt: "Mountain pass",
   },
   {
-    src: "https://images.unsplash.com/photo-1616432043562-3671ea2e5242?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    src: "/images/hotel3.jpg",
     alt: "Local people",
   },
   {
-    src: "https://images.unsplash.com/photo-1631489711760-8097d38e4a7f?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    src: "/images/activity1.jpg",
     alt: "Prayer flags",
   },
   {
-    src: "https://images.unsplash.com/photo-1571388742809-d60c4b662328?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80",
+    src: "/images/landscape.jpg",
     alt: "Ladakh landscapes",
   },
 ];
