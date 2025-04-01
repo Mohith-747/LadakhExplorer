@@ -220,7 +220,7 @@ export const activities = [
     description:
       "Explore stunning mountain trails from easy day hikes to challenging multi-day treks through remote valleys and high passes.",
     image:
-      "https://images.unsplash.com/photo-1594791397698-636155a91518?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     season: "Jun-Sep",
     category: "Adventure",
   },
@@ -229,7 +229,7 @@ export const activities = [
     description:
       "Experience the thrill of cycling through high-altitude passes and picturesque valleys on well-maintained mountain bikes.",
     image:
-      "https://images.unsplash.com/photo-1563016115-85ef00d7c050?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     season: "May-Oct",
     category: "Adventure",
   },
@@ -238,7 +238,7 @@ export const activities = [
     description:
       "Visit ancient Buddhist monasteries to witness meditation sessions, religious ceremonies, and marvel at centuries-old art and architecture.",
     image:
-      "https://images.unsplash.com/photo-1533625257312-05a66b6292cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1568425502579-250724b7ce18?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     season: "Year-round",
     category: "Cultural",
   },
@@ -247,7 +247,7 @@ export const activities = [
     description:
       "Navigate the thrilling rapids of the Zanskar and Indus rivers with experienced guides for an adrenaline-pumping adventure.",
     image:
-      "https://images.unsplash.com/photo-1570817218203-737bbb553f0c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1584289537662-27851fd5ab8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     season: "Jun-Aug",
     category: "Adventure",
   },
@@ -256,7 +256,7 @@ export const activities = [
     description:
       "Ride double-humped Bactrian camels across the sand dunes of Nubra Valley for a unique desert experience in the Himalayas.",
     image:
-      "https://images.unsplash.com/photo-1452858421857-d2adecf0cbc1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1573167443175-ce20fdc27a57?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     season: "May-Sep",
     category: "Cultural",
   },
@@ -265,7 +265,7 @@ export const activities = [
     description:
       "Capture the stunning landscapes, vibrant festivals, and unique culture of Ladakh with guided photography expeditions.",
     image:
-      "https://images.unsplash.com/photo-1625295225391-33a67a1be499?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
     season: "Year-round",
     category: "Cultural",
   },

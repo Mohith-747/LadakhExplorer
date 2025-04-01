@@ -124,15 +124,19 @@ export const MapSection = () => {
             viewport={{ once: true, amount: 0.2 }}
           >
             <div className="border-4 border-neutral-light rounded-xl overflow-hidden shadow-lg">
-              {/* Interactive Map Placeholder */}
+              {/* Interactive Map */}
               <div className="bg-neutral-light h-96 relative flex items-center justify-center">
                 <img
-                  src="https://images.unsplash.com/photo-1526142741775-85a0fca0c2a1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                  src="https://images.unsplash.com/photo-1628062699790-841ac4a98b07?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                   alt="Map of Ladakh"
-                  className="w-full h-full object-cover opacity-40"
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.currentTarget.src = "https://maps.googleapis.com/maps/api/staticmap?center=Ladakh,India&zoom=7&size=800x400&markers=color:red%7Clabel:L%7CLadakh,India&key=YOUR_API_KEY";
+                    e.currentTarget.onerror = null;
+                  }}
                 />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
+                <div className="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
+                  <div className="bg-white bg-opacity-90 rounded-lg shadow-lg p-4 text-center">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-12 w-12 text-primary mb-4 mx-auto"
@@ -148,10 +152,10 @@ export const MapSection = () => {
                       />
                     </svg>
                     <h4 className="font-heading font-bold text-xl">
-                      Interactive Map
+                      Explore Ladakh Map
                     </h4>
                     <p className="text-sm text-neutral-dark mt-2">
-                      Click to explore destinations
+                      Click on markers to discover destinations
                     </p>
                   </div>
                 </div>
